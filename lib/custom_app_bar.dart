@@ -20,7 +20,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
             firestoreService: firestoreService,
             onExamAdded: () {
               Navigator.of(context).pop();
-              onRefresh?.call(); // Call the refresh function after adding an exam
+              onRefresh?.call();
             },
           ),
           actions: [
